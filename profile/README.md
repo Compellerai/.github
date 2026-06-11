@@ -18,7 +18,6 @@ We care about speed, control, and quality. The best tools should stay out of the
 ## Links
 
 - Website: https://compeller.ai
-- TwitchTV: https://twitch.tv/compellerai
 - Kick: https://kick.com/compeller
 - GitHub: https://github.com/yakoob
 - Founder: https://yakoobahmad.com
