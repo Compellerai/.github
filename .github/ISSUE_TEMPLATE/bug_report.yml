@@ -1,0 +1,81 @@
+name: Bug report
+description: Something is broken or does not behave as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security problem? Do not file it here. Follow the [security policy](https://github.com/Compellerai/.github/blob/main/SECURITY.md).
+  - type: dropdown
+    id: component
+    attributes:
+      label: Repo or component
+      options:
+        - "REACT: visuals"
+        - "REACT: lighting (DMX, Hue, WLED)"
+        - "REACT: audio input or beat detection"
+        - "REACT: NDI or streaming"
+        - "REACT: other"
+        - prodjlink-rs
+        - ola-rs
+        - link-bpm
+        - compeller-mcp (docs)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Release or crate version, or the output of `git rev-parse --short HEAD`.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS and hardware
+      description: For REACT, the macOS version and whether the Mac is Apple Silicon or Intel.
+      placeholder: macOS 15.1, Apple Silicon (M2 MacBook Pro)
+    validations:
+      required: true
+  - type: textarea
+    id: devices
+    attributes:
+      label: Audio and lighting devices
+      description: Whatever is involved. DJ mixer, CDJ model and firmware, audio interface, Hue bridge, WLED controller, DMX interface and fixtures. Leave empty if none.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant output only. Remove tokens and license keys before pasting. This field is formatted as code.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
+        - label: This report contains no secrets, such as API tokens, license keys, private keys, or signing material.
+          required: true
