@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Compellerai/.github/blob/main/SECURITY.md
+    about: Do not open a public issue. Follow the security policy to report privately.
+  - name: Compeller.ai website
+    url: https://compeller.ai
+    about: What Compeller.ai builds.
+  - name: Email info@compeller.ai
+    url: https://github.com/Compellerai/.github/blob/main/SUPPORT.md
+    about: For hosted service problems and anything that should not be public, email info@compeller.ai.
